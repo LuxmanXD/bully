@@ -31,9 +31,9 @@ else:
         O = ""
         R = ""
 
-### HEADERS ###
+### FONT ###
 
-def banner():
+def banner(): 
     print("""\033[1;31m   
       \033[1;33m•\033[1;91m•\033[1;37m︻╦̵̵͇╤───────  AUTHOR:Lukman XD \033[1;33m•\033[1;91m•\033[1;37m 
      
@@ -43,8 +43,7 @@ def banner():
 |    |___|  |  />    < 
 |_______ \____//__/\_ \
 """)
-
-ua="Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]"
+ua = [('User-Agent', 'Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16')]
 host="https://mbasic.facebook.com"
 ip=None
 try:
